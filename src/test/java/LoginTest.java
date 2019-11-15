@@ -12,15 +12,28 @@ import parentTest.ParentTest;
 import java.util.concurrent.TimeUnit;
 
 
-public  class firstTest extends ParentTest {
+public  class LoginTest extends ParentTest {
 
+    WebDriver webDriver;
 
+    @Before
+    public void setUp(){
+        //set ChromeDriver and path to file
+        System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drivers/chromedriver_0711.exe");
+        webDriver = new ChromeDriver();
+        loginPage = new LoginPage(webDriver);
+
+        //for opening window of browser in maximum size
+        webDriver.manage().window().maximize();
+        //for waiting before each action
+        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    }
 
     @Test
     public void test() {
-        webDriver.get("https://test.solo-crm.com/#/");
+        webDriver.get("https://test.solo-crm.com/#/login");
 
-        //input login to "Login" field
+        //input password to "Login" field
         WebElement loginField = webDriver.findElement(By.xpath(".//input[@aria-label='Login']"));
         loginField.clear();
         loginField.sendKeys("admin_test");
@@ -34,8 +47,13 @@ public  class firstTest extends ParentTest {
         submitButton.click();
 
         LoginPage loginPage = new LoginPage(webDriver);
-        Assert.assertTrue("MainPage isn't present", loginPage.isElementVisible());
+        Assert.assertTrue("MainPage isn't present", webDriver.findElement(By.xpath(".//*[contains(text(), 'Sign in')]")).isDisplayed());
     }
 
+    @After
+    public void tearDown()
+        {
+            webDriver.quit();
+        }
 
 }
