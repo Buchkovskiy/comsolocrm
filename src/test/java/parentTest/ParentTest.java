@@ -23,8 +23,11 @@ public class ParentTest {
         //set ChromeDriver and path to file
         System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drivers/chromedriver_0711.exe");
         webDriver = new ChromeDriver();
+
+        //Created new pages
         loginPage = new LoginPage(webDriver);
         homePage = new HomePage(webDriver);
+
         //for opening window of browser in maximum size
         webDriver.manage().window().maximize();
         //for waiting before each action

@@ -41,13 +41,12 @@ public  class LoginTest extends ParentTest {
         //input password to "Password" field
         WebElement passField = webDriver.findElement(By.xpath(".//input[@aria-label='Password']"));
         passField.clear();
-        passField.sendKeys("132465798");
+        passField.sendKeys("rml(r$g$yi");
 
         WebElement submitButton = webDriver.findElement(By.xpath(".//*[contains(text(), 'Sign in')]"));
         submitButton.click();
 
-        LoginPage loginPage = new LoginPage(webDriver);
-        Assert.assertTrue("MainPage isn't present", webDriver.findElement(By.xpath(".//*[contains(text(), 'Sign in')]")).isDisplayed());
+        Assert.assertTrue("MainPage isn't present", webDriver.findElement(By.xpath(".//div[contains(text(), 'Main Page')]")).isDisplayed());
     }
 
     @After

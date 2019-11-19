@@ -1,9 +1,9 @@
 package pages;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends ParentPage{
 
@@ -11,10 +11,16 @@ public class LoginPage extends ParentPage{
         super(webDriver);
     }
 
+    @FindBy (xpath = (".//input[@aria-label='Login']"))
+    private WebElement loginInput;
 
+    @FindBy (xpath = (".//input[@aria-label='Password']"))
+    private WebElement passwordInput;
 
+    @FindBy (xpath = (".//*[contains(text(), 'Sign in')]"))
+    private WebElement submitButton;
 
-
+    //method for open page
     public void openPage(){
         try{
             webDriver.get("https://test.solo-crm.com/#/login/");
@@ -25,36 +31,19 @@ public class LoginPage extends ParentPage{
         }
     }
 
+    //method for input login
     public void enterTextInToInputLogin(String login) {
-        //input login to "Login" field
-        try{
-            WebElement loginField = webDriver.findElement(By.xpath(".//input[@aria-label='Login']"));
-            loginField.clear();
-            loginField.sendKeys(login);
-            logger.info(login+" was inputted into LoginField");
-        } catch (Exception e){
-            logger.error("Element is not worked");
-            Assert.fail("Element is not worked");
-        }
+        actions.enterTextToInput(loginInput, login);
     }
 
-
+    //method for input password
     public void enterTextInToInputPassword(String password) {
-        //input login to "Login" field
-        try{
-            WebElement passwordField = webDriver.findElement(By.xpath(".//input[@aria-label='Password']"));
-            passwordField.clear();
-            passwordField.sendKeys(password);
-            logger.info(password+" was inputted into LoginField");
-        } catch (Exception e){
-            logger.error("Element is not worked");
-            Assert.fail("Element is not worked");
-        }
+        actions.enterTextToInput(passwordInput, password);
     }
 
+    //method for submit enter
     public void clickOnButtonSubmit() {
         try{
-            WebElement submitButton = webDriver.findElement(By.xpath(".//*[contains(text(), 'Sign in')]"));
             submitButton.click();
             logger.info("Submit was clicked");
         }catch (Exception e){

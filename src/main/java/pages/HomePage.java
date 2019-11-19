@@ -10,7 +10,7 @@ public class HomePage  extends ParentPage{
 
     public boolean isElementVisible() {
         try {
-            return webDriver.findElement(By.xpath(".//*[contains(text(), 'Main Page')]")).isDisplayed();
+            return webDriver.findElement(By.xpath(".//div[contains(text(), 'Main Page')]")).isDisplayed();
         }
         catch(Exception e) {
             return false;
