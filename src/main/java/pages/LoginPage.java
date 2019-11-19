@@ -52,5 +52,13 @@ public class LoginPage extends ParentPage{
         }
     }
 
+    public void singInWithCredation (String login, String password){
+        openPage();
+        enterTextInToInputLogin(login);
+        enterTextInToInputPassword(password);
+        clickOnButtonSubmit();
+    }
+
+
 
 }
