@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends ParentPage{
 
     public LoginPage(WebDriver webDriver) {
-        super(webDriver);
+        super(webDriver, "/login");
     }
 
     @FindBy (xpath = (".//input[@aria-label='Login']"))
@@ -23,7 +23,7 @@ public class LoginPage extends ParentPage{
     //method for open page
     public void openPage(){
         try{
-            webDriver.get("https://test.solo-crm.com/#/login/");
+            webDriver.get("https://test.solo-crm.com/#/login");
             logger.info("LoginPage was opened");
         }catch (Exception e){
             logger.info("Can't open LoginPage");
