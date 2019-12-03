@@ -25,14 +25,14 @@ abstract public class ParentPage {
         //initialization elements FindBy
         PageFactory.initElements(webDriver, this);
         actions = new Actions(webDriver);
-        expectedURL = BASE_URL+partURL;
+        expectedURL = BASE_URL + partURL;
     }
 
-    public void checkCurrentURL (){
-        try{
+    public void checkCurrentURL() {
+        try {
             Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
-        } catch (Exception e){
-            logger.error("Can't get URL"+e);
+        } catch (Exception e) {
+            logger.error("Can't get URL" + e);
             Assert.fail("Can't get URL");
         }
     }
