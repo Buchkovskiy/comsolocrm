@@ -13,10 +13,12 @@ public class HomePage  extends ParentPage{
 
     public boolean isElementVisible() {
         try {
+
             return webDriver.findElement(By.xpath(".//div[contains(text(), 'Main Page')]")).isDisplayed();
         }
         catch(Exception e) {
             return false;
         }
     }
+
 }

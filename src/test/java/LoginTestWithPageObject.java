@@ -13,8 +13,8 @@ public class LoginTestWithPageObject  extends ParentTest {
         loginPage.enterTextInToInputPassword("c>s<d6rp6h");
         loginPage.clickOnButtonSubmit();
 
-        homePage.checkCurrentURL();
         checkExpectedResult("Logo isn't displayed", true, homePage.isElementVisible());
+
     }
 
     @Test
