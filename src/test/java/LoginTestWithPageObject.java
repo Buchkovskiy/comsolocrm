@@ -11,10 +11,12 @@ public class LoginTestWithPageObject  extends ParentTest {
         loginPage.checkCurrentURL();
         loginPage.enterTextInToInputLogin("admin_qaa");
         loginPage.enterTextInToInputPassword("c>s<d6rp6h");
+        loginPage.checkCurrentURL();
         loginPage.clickOnButtonSubmit();
+        homePage.checkCurrentURL();
 
         checkExpectedResult("Logo isn't displayed", true, homePage.isElementVisible());
-
+        homePage.checkCurrentURL();
     }
 
     @Test

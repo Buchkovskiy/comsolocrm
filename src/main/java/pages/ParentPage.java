@@ -29,13 +29,27 @@ abstract public class ParentPage {
     }
 
     public void checkCurrentURL() {
+            String currentURL = webDriver.getCurrentUrl();
+            if (expectedURL.equals(webDriver.getCurrentUrl())){
+                System.out.println("Expected URL: "+expectedURL+" = " + " Current URL: "+webDriver.getCurrentUrl());
+
+            } else{
+                System.out.println("Expected URL - "+expectedURL+" != "+"Current URL - "+webDriver.getCurrentUrl());
+            };
+    }
+
+   /* public void checkCurrentURL() {
         try {
-            Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
+            if (expectedURL==webDriver.getCurrentUrl()){
+                System.out.println("expected URL - "+expectedURL+"/="+"currentUrl - "+webDriver.getCurrentUrl());
+            };
+
+           // Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
         } catch (Exception e) {
             logger.error("Can't get URL" + e);
             Assert.fail("Can't get URL");
         }
-    }
+    }*/
 
 
 }
