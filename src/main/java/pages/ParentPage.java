@@ -20,6 +20,7 @@ abstract public class ParentPage {
     String expectedURL;
 
 
+
     public ParentPage(WebDriver webDriver, String partURL) {
         this.webDriver = webDriver;
         //initialization elements FindBy
@@ -28,8 +29,23 @@ abstract public class ParentPage {
         expectedURL = BASE_URL + partURL;
     }
 
-    public void checkCurrentURL() {
-            String currentURL = webDriver.getCurrentUrl();
+
+    public void checkCurrentURL1() {
+
+
+
+        if (expectedURL.equals(webDriver.getCurrentUrl())){
+            System.out.println("Expected URL: "+expectedURL+" = " + " Current URL: "+webDriver.getCurrentUrl());
+
+        } else{
+            System.out.println("Expected URL - "+expectedURL+" != "+"Current URL - "+webDriver.getCurrentUrl());
+        };
+    }
+    public void checkCurrentURL2() {
+        WebElement dynamicElement = (new WebDriverWait(webDriver, 10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[contains(text(), 'Main Page')]")));
+
+        String currentURL = webDriver.getCurrentUrl();
             if (expectedURL.equals(webDriver.getCurrentUrl())){
                 System.out.println("Expected URL: "+expectedURL+" = " + " Current URL: "+webDriver.getCurrentUrl());
 
