@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d09c331b-2c53-43f0-81d4-3f2af5eb7418" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+            <state relative-caret-position="102">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="207">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#248#249#0" expanded="true" />
@@ -83,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/libs/Actions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="265">
+              <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#342#343#0" expanded="true" />
@@ -98,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="16" column="88" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="88" />
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/main/java/endPoints/EndPoints.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/CurrencyValues.java" />
         <option value="$PROJECT_DIR$/src/test/java/api/ApiTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" />
       </list>
@@ -164,6 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,8 +241,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,38 +352,45 @@
       <option name="project" value="LOCAL" />
       <updated>1575548755279</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="work with checkURL">
+      <created>1575650187380</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575650187380</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.04 at 17h 53m 47s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.10 at 15h 29m 56s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 16h 56m 18s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 00m 05s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 01m 09s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 13m 59s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 01m 22s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 14m 45s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 01m 49s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 24m 24s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 02m 28s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 30m 28s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 02m 53s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 47m 02s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 17h 28m 25s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 49m 15s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 18h 18m 47s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 50m 29s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.06 at 18h 19m 01s.xml">
+    <history-entry file="LoginTestWithPageObject_validLogin - 2019.12.12 at 16h 51m 34s.xml">
       <configuration name="LoginTestWithPageObject.validLogin" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -396,9 +405,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.13219616" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.13539445" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.13113007" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,15 +415,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.50180507" side_tool="true" weight="0.13113007" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4824094" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" x="22" y="335" width="1876" height="369" id="Debug" order="3" sideWeight="0.58315563" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47121534" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" x="22" y="335" width="1876" height="369" id="Debug" order="3" sideWeight="0.5826226" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51759064" side_tool="true" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.24200426" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48400852" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.75959486" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.24040511" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47228146" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,19 +439,8 @@
     <MESSAGE value="added BASE_URL+currentURL" />
     <MESSAGE value="worked with API" />
     <MESSAGE value="work with checkCurrentURL" />
-    <option name="LAST_COMMIT_MESSAGE" value="work with checkCurrentURL" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="work with checkURL" />
+    <option name="LAST_COMMIT_MESSAGE" value="work with checkURL" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -849,10 +846,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/CurrencyValues.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.0/selenium-api-3.141.0.jar!/org/openqa/selenium/WebElement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="119">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -863,17 +870,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.0/selenium-api-3.141.0.jar!/org/openqa/selenium/WebElement.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/CurrencyValues.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="207">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#248#249#0" expanded="true" />
@@ -886,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/libs/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="265">
+          <caret line="16" column="68" lean-forward="true" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#342#343#0" expanded="true" />
@@ -898,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LoginTestWithPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -909,17 +916,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parentTest/ParentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -928,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/ParentPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

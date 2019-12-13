@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 abstract public class ParentPage {
 
     WebDriver webDriver;
@@ -19,8 +21,6 @@ abstract public class ParentPage {
     final String BASE_URL = "https://test.solo-crm.com/#";
     String expectedURL;
 
-
-
     public ParentPage(WebDriver webDriver, String partURL) {
         this.webDriver = webDriver;
         //initialization elements FindBy
@@ -29,43 +29,39 @@ abstract public class ParentPage {
         expectedURL = BASE_URL + partURL;
     }
 
-
-    public void checkCurrentURL1() {
-
-
-
-        if (expectedURL.equals(webDriver.getCurrentUrl())){
-            System.out.println("Expected URL: "+expectedURL+" = " + " Current URL: "+webDriver.getCurrentUrl());
-
-        } else{
-            System.out.println("Expected URL - "+expectedURL+" != "+"Current URL - "+webDriver.getCurrentUrl());
-        };
+     public void checkCurrentURL() {
+        try {
+            Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
+            logger.info( expectedURL+" is opened");
+        } catch (Exception e) {
+            logger.error("Can't open "+expectedURL+" "+ e);
+            Assert.fail("Can't open "+expectedURL);
+        }
     }
-    public void checkCurrentURL2() {
-        WebElement dynamicElement = (new WebDriverWait(webDriver, 10))
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[contains(text(), 'Main Page')]")));
 
-        String currentURL = webDriver.getCurrentUrl();
+
+    public void checkCurrentURL2() {
+        try {
+            (new WebDriverWait(webDriver, 10))
+                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[contains(text(), 'Main Page')]")));
+
+            Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
+            logger.info( expectedURL+" is opened");
+        } catch (Exception e) {
+            logger.error("Can't open "+expectedURL+" "+ e);
+            Assert.fail("Can't open "+expectedURL);
+        }
+    }
+
+    public void checkCurrentURL3() {
+       WebElement dynamicElement = (new WebDriverWait(webDriver, 10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//div[contains(text(), 'Main Page')]")));
             if (expectedURL.equals(webDriver.getCurrentUrl())){
                 System.out.println("Expected URL: "+expectedURL+" = " + " Current URL: "+webDriver.getCurrentUrl());
 
             } else{
                 System.out.println("Expected URL - "+expectedURL+" != "+"Current URL - "+webDriver.getCurrentUrl());
-            };
+            }
     }
-
-   /* public void checkCurrentURL() {
-        try {
-            if (expectedURL==webDriver.getCurrentUrl()){
-                System.out.println("expected URL - "+expectedURL+"/="+"currentUrl - "+webDriver.getCurrentUrl());
-            };
-
-           // Assert.assertEquals("URL is not expected", expectedURL, webDriver.getCurrentUrl());
-        } catch (Exception e) {
-            logger.error("Can't get URL" + e);
-            Assert.fail("Can't get URL");
-        }
-    }*/
-
 
 }
