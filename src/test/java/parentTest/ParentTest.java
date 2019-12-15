@@ -21,7 +21,7 @@ public class ParentTest {
     @Before
     public void setUp(){
         //set ChromeDriver and path to file
-        System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drivers/chromedriver_0711.exe");
+        System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drive/chromedriver_0711.exe");
         webDriver = new ChromeDriver();
 
         //Created new pages
@@ -31,7 +31,7 @@ public class ParentTest {
         //for opening window of browser in maximum size
         webDriver.manage().window().maximize();
         //for waiting before each action
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         webDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
     }
 
