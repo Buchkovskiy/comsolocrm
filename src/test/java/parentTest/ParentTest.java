@@ -31,7 +31,7 @@ public class ParentTest {
         //for opening window of browser in maximum size
         webDriver.manage().window().maximize();
         //for waiting before each action
-        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         webDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
     }
 
