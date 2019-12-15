@@ -21,7 +21,7 @@ public class ParentTest {
     @Before
     public void setUp(){
         //set ChromeDriver and path to file
-        System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drivers/chromedriver_0711.exe");
+        System.setProperty("webdriver.chrome.driver", "F://Automation/comsolocrm/src/drive/chromedriver_0711.exe");
         webDriver = new ChromeDriver();
 
         //Created new pages
